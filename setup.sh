@@ -1,7 +1,11 @@
 #!/bin/sh
 
-sudo apt update -y
-sudo apt install -y vim git curl zsh python httpie
+if [ -z "${SUDO+1}" ]; then
+    SUDO='sudo'
+fi
+
+$SUDO apt update -y
+$SUDO apt install -y vim git curl zsh python httpie
 
 cp .vimrc ~/.vimrc
 
