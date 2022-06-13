@@ -1,11 +1,7 @@
 #!/bin/sh
 
 sudo apt update -y
-sudo apt install -y vim \
-    git \
-    curl \
-    http \
-    zsh
+sudo apt install -y vim git curl zsh python httpie
 
 cp .vimrc ~/.vimrc
 
