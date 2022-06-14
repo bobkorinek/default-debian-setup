@@ -11,4 +11,5 @@ chmod +x setup.sh
 ./setup.sh
 
 cd ..
+rm "$ZIP_FILE"
 rm -rf "$ZIP_FOLDER"
